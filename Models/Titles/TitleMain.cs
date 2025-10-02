@@ -13,7 +13,7 @@ namespace FirstMauiMobileApp.Models.Titles
         public static string Images { get; } = "Images";
         public static string Collections { get; } = "Collections";
         public static string Controls { get; } = "Controls";
-        public static string SQLite { get; } = "SQLite";
+        public static string SQLite { get; } = "SQL Lite";
 
     }
 }
