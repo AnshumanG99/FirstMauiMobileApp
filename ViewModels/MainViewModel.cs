@@ -1,33 +1,50 @@
-﻿using FirstMauiMobileApp.Models.Titles;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using FirstMauiMobileApp.Models.Titles;
 using FirstMauiMobileApp.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace FirstMauiMobileApp.ViewModels
 {
-    public class MainViewModel : BaseViewModel
+    public partial class MainViewModel : ObservableObject
     {
-        public string Layouts { get; set; } = TitleMain.Layouts;
-        public string Images { get; set; } = TitleMain.Images;
-        public string Collections { get; set; } = TitleMain.Collections;
-        public string Controls { get; set; } = TitleMain.Controls;
-        public string SQLite { get; set; } = TitleMain.SQLite;
+        [ObservableProperty]
+        public string title = TitleMain.Title;
+        [ObservableProperty]
+        public string layouts = TitleMain.Layouts;
+        [ObservableProperty]
+        public string images = TitleMain.Images;
+        [ObservableProperty]
+        public string collections = TitleMain.Collections;
+        [ObservableProperty]
+        public string controls = TitleMain.Controls;
+        [ObservableProperty]
+        public string sQLite = TitleMain.SQLite;
 
+        //public string Layouts { get; set; } = TitleMain.Layouts;
+        //public string Images { get; set; } = TitleMain.Images;
+        //public string Collections { get; set; } = TitleMain.Collections;
+        //public string Controls { get; set; } = TitleMain.Controls;
+        //public string SQLite { get; set; } = TitleMain.SQLite;
+            
 
         //Button Commands
-        public ICommand OnLayoutsClicked { get; set; }
+        //public ICommand OnLayoutsClicked { get; set; }
 
         public MainViewModel() 
         {
-            Title = TitleMain.Title;
+            //Title = TitleMain.Title;
 
-            //Set Commands
-            OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
+            ////Set Commands
+            //OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
+
         }
+
+        //[RelayCommand]
+        //private async Task LayoutClicked()
+        //{
+        //    await Shell.Current.GoToAsync(nameof(LayoutsPage));
+        //}
 
         private async void OnLayoutsClickedAsync()
         {
