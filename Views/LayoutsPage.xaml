@@ -2,58 +2,55 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FirstMauiMobileApp.Views.LayoutsPage"
-             Title="{Binding Title}">
+             Title="{Binding LayoutsTitle}">
     
     <VerticalStackLayout>
-        
-        <VerticalStackLayout>
 
-            <Grid   Padding="16, 24, 16, 16"
-                    RowSpacing="6"
-                    ColumnSpacing="12">
+        <Grid   Padding="16, 24, 16, 16"
+                RowSpacing="6"
+                ColumnSpacing="12">
 
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-                <Button Grid.Row="0"
-                        Grid.Column="0"
-                        Text="{Binding StackLayout}"
-                        Style="{StaticResource LayoutButton}" />
-
-                <Button Grid.Row="0"
-                        Grid.Column="1"
-                        Text="{Binding VerticalStack}"
-                        Style="{StaticResource LayoutButton}" />
-
-                <Button Grid.Row="1"
-                        Grid.Column="0"
-                        Text="{Binding HorizontalStack}"
-                        Style="{StaticResource LayoutButton}" />
-
-                <Button Grid.Row="1"
-                        Grid.Column="1"
-                        Text="{Binding AbsoluteLayout}"
-                        Style="{StaticResource LayoutButton}" />
-
-                <Button Grid.Row="3" 
+            <Button Grid.Row="0"
                     Grid.Column="0"
-                    Grid.ColumnSpan="2"
-                    Text="{Binding FlexLayout}"
+                    Text="{Binding StackLayout}"
+                    Command = "{Binding StackLayoutsClickedCommand}"
                     Style="{StaticResource LayoutButton}" />
-                
-            </Grid>
 
-        </VerticalStackLayout>
+            <Button Grid.Row="0"
+                    Grid.Column="1"
+                    Text="{Binding VerticalStack}"
+                    Style="{StaticResource LayoutButton}" />
+
+            <Button Grid.Row="1"
+                    Grid.Column="0"
+                    Text="{Binding HorizontalStack}"
+                    Style="{StaticResource LayoutButton}" />
+
+            <Button Grid.Row="1"
+                    Grid.Column="1"
+                    Text="{Binding AbsoluteLayout}"
+                    Style="{StaticResource LayoutButton}" />
+
+            <Button Grid.Row="3" 
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="{Binding FlexLayout}"
+                Style="{StaticResource LayoutButton}" />
+
+        </Grid>
 
     </VerticalStackLayout>
     

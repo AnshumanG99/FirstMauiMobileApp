@@ -10,23 +10,21 @@ namespace FirstMauiMobileApp.ViewModels
     {
         [ObservableProperty]
         public string title = TitleMain.Title;
+
         [ObservableProperty]
         public string layouts = TitleMain.Layouts;
+
         [ObservableProperty]
         public string images = TitleMain.Images;
+
         [ObservableProperty]
         public string collections = TitleMain.Collections;
+
         [ObservableProperty]
         public string controls = TitleMain.Controls;
+
         [ObservableProperty]
         public string sQLite = TitleMain.SQLite;
-
-        //public string Layouts { get; set; } = TitleMain.Layouts;
-        //public string Images { get; set; } = TitleMain.Images;
-        //public string Collections { get; set; } = TitleMain.Collections;
-        //public string Controls { get; set; } = TitleMain.Controls;
-        //public string SQLite { get; set; } = TitleMain.SQLite;
-            
 
         //Button Commands
         //public ICommand OnLayoutsClicked { get; set; }
@@ -40,15 +38,17 @@ namespace FirstMauiMobileApp.ViewModels
 
         }
 
-        //[RelayCommand]
-        //private async Task LayoutClicked()
+        [RelayCommand]
+        private async Task LayoutsClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsPage));
+        }
+
+        //private async void OnLayoutsClickedAsync()
         //{
-        //    await Shell.Current.GoToAsync(nameof(LayoutsPage));
+        //    await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
         //}
 
-        private async void OnLayoutsClickedAsync()
-        {
-            await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
-        }
     }
+
 }

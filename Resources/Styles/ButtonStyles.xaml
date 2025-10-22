@@ -22,7 +22,7 @@
         <Setter Property="Margin" Value="4" />
         <Setter Property="HeightRequest" Value="50" />
         <Setter Property="CornerRadius" Value="10" />
-        <Setter Property="BackgroundColor" Value="DarkSeaGreen" />
+        <Setter Property="BackgroundColor" Value="MediumSeaGreen" />
         <Setter Property="TextColor" Value="White" />
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HorizontalOptions" Value="Fill" />

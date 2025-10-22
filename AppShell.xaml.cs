@@ -13,10 +13,10 @@ namespace FirstMauiMobileApp
         private void RegisterRoutes()
         {
             //Layouts
-            Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
             Routing.RegisterRoute(nameof(LayoutsPage), typeof(LayoutsPage));
-        
+
             //Layouts Child Page 
+            Routing.RegisterRoute(nameof(LayoutStackPage), typeof(LayoutStackPage));
         }
 
     }
