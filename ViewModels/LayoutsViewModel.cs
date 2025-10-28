@@ -39,7 +39,25 @@ namespace FirstMauiMobileApp.ViewModels
         [RelayCommand]
         private async Task StackLayoutsClicked()
         {
-            await Shell.Current.GoToAsync(nameof(LayoutStackPage));
+            await Shell.Current.GoToAsync(nameof(LayoutsStackPage));
+        }
+
+        [RelayCommand]
+        private async Task VerticalStackLayoutClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsVerticalPage));
+        }
+        
+        [RelayCommand]
+        private async Task HorizontalStackLayoutClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsHorizontalPage));
+        }
+
+        [RelayCommand]
+        private async Task AbsoluteLayoutClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutsAbsolutePage));
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FirstMauiMobileApp.Models.Titles
 {
-    class TitleLayoutStack
+    class TitleLayoutsAbsolute
     {
-        public static string StackLayoutTitle { get; } = "StackLayout";
+        public static string AbsoluteLayoutTitle { get; } = "Absolute Layout";
 
     }
 }
