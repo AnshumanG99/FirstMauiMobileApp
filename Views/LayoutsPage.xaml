@@ -51,6 +51,7 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Text="{Binding FlexLayout}"
+                Command = "{Binding FlexLayoutClickedCommand}"
                 Style="{StaticResource LayoutButton}" />
 
         </Grid>
