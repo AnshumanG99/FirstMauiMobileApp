@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FirstMauiMobileApp.Views.LayoutsPage"
-             Title="{Binding LayoutsTitle}">
-    
+             x:Class="FirstMauiMobileApp.Views.ImagesPage"
+             Title="{Binding Images}">
+
     <VerticalStackLayout>
 
         <Grid   Padding="16, 24, 16, 16"
@@ -11,9 +11,6 @@
                 ColumnSpacing="12">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
@@ -25,37 +22,28 @@
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding StackLayout}"
-                    Command = "{Binding StackLayoutsClickedCommand}"
+                    Text="{Binding Embedded}"
+                    Command = "{Binding EmbeddedClickedCommand}"
                     Style="{StaticResource LayoutButton}" />
 
             <Button Grid.Row="0"
                     Grid.Column="1"
-                    Text="{Binding VerticalStack}"
-                    Command = "{Binding VerticalStackLayoutClickedCommand}"
-                    Style="{StaticResource LayoutButton}" />
-
-            <Button Grid.Row="1"
-                    Grid.Column="0"
-                    Text="{Binding HorizontalStack}"
-                    Command = "{Binding HorizontalStackLayoutClickedCommand}"
-                    Style="{StaticResource LayoutButton}" />
-
-            <Button Grid.Row="1"
-                    Grid.Column="1"
-                    Text="{Binding AbsoluteLayout}"
-                    Command = "{Binding AbsoluteLayoutClickedCommand}"
+                    Text="{Binding ActivityIndicator}"
+                    Command = "{Binding ActivityIndicatorClickedCommand}"
                     Style="{StaticResource LayoutButton}" />
 
             <Button Grid.Row="3" 
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding FlexLayout}"
-                    Command = "{Binding FlexLayoutClickedCommand}"
+                    Text="{Binding URI}" 
+                    Command = "{Binding URIClickedCommand}"
                     Style="{StaticResource LayoutButton}" />
+
 
         </Grid>
 
     </VerticalStackLayout>
-    
+
+
+
 </ContentPage>
