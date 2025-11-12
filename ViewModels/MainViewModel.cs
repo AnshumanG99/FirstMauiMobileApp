@@ -44,6 +44,13 @@ namespace FirstMauiMobileApp.ViewModels
             await Shell.Current.GoToAsync(nameof(LayoutsPage));
         }
 
+
+        [RelayCommand]
+        private async Task ImagesClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ImagesPage));
+        }
+
         //private async void OnLayoutsClickedAsync()
         //{
         //    await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
