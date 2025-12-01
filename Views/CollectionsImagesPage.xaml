@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:x="clr-namespace:FirstMauiMobileApp.Models.Entities"
+             xmlns:local="clr-namespace:FirstMauiMobileApp.Models.Entities"
              x:Class="FirstMauiMobileApp.Views.CollectionsImagesPage"
-             Title="CollectionsImagesPage">
+             Title="{Binding Title}">
 
     <VerticalStackLayout>
 
         <BoxView HeightRequest="2" BackgroundColor="Black"/>
 
         <CollectionView x:Name="ItemsListView"
-                        ItemsSource="{Binding MarvelMoviesCollection}"
+                        ItemsSource="{Binding MarvelCharactersCollection}"
                         SelectionMode="None">
 
             <CollectionView.ItemsLayout>
@@ -18,7 +18,7 @@
             </CollectionView.ItemsLayout>
 
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="local:MarvelMovies">
+                <DataTemplate x:DataType="local:MarvelCharacters">
                     <Grid Padding="2">
 
                         <Grid.RowDefinitions>
@@ -26,8 +26,13 @@
                         </Grid.RowDefinitions>
 
                         <HorizontalStackLayout>
-                            <VerticalStackLayout>
-                                <Label Text="{Binding NameofMovie}"
+                            <Image Source="{Binding ImagePath}" HeightRequest="100" WidthRequest="100" Aspect="Fill"/>
+                            <VerticalStackLayout Margin="0,15,0,0">
+                                <Label Text="{Binding CharacterName}"
+                                       FontAttributes="Bold" 
+                                       HorizontalTextAlignment="Start"
+                                       FontSize="Medium"/>
+                                <Label Text="{Binding ActorName}"
                                        FontAttributes="Bold" 
                                        HorizontalTextAlignment="Start"
                                        FontSize="Medium"/>

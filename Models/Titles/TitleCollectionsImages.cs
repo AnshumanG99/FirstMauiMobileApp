@@ -8,5 +8,7 @@ namespace FirstMauiMobileApp.Models.Titles
 {
     internal class TitleCollectionsImages
     {
+        public static string Title { get; } = "Collection w/ Images";
+
     }
 }

@@ -28,9 +28,13 @@ namespace FirstMauiMobileApp.Models.Entities
             ImagePath = image;
         }
 
-        public static List<MarvelCharacters> GetMovies() => new List<MarvelCharacters>
+        public static List<MarvelCharacters> GetCharacters() => new List<MarvelCharacters>
     {
-//        new MarvelCharacters("Starlord", "Chriss Pratt", chrispratt.png),
+        new MarvelCharacters("Starlord", "Chris Pratt", "drakemaye.png"),
+        //new MarvelCharacters("Gamora", "Zoe Saldana", "gamora.jpg"),
+        //new MarvelCharacters("Groot", "Vin Diesel", "groot.jpg"),
+        //new MarvelCharacters("Rocket", "Bradley Cooper", "rocket.jpg"),
+        //new MarvelCharacters("Nebula", "Karen Gillan", "nebula.jpg")
 
      };
     }
