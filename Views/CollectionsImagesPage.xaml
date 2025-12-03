@@ -24,18 +24,26 @@
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
-
-                        <HorizontalStackLayout>
+s
+                        <HorizontalStackLayout Padding="10" Spacing="10">
+                            
                             <Image Source="{Binding ImagePath}" HeightRequest="100" WidthRequest="100" Aspect="Fill"/>
+                                
                             <VerticalStackLayout Margin="0,15,0,0">
-                                <Label Text="{Binding CharacterName}"
-                                       FontAttributes="Bold" 
-                                       HorizontalTextAlignment="Start"
-                                       FontSize="Medium"/>
+                                
                                 <Label Text="{Binding ActorName}"
                                        FontAttributes="Bold" 
                                        HorizontalTextAlignment="Start"
-                                       FontSize="Medium"/>
+                                       FontSize="Small"
+                                       TextColor="SeaGreen"/>
+                                
+                                <Label Text="{Binding CharacterName}"
+                                       FontAttributes="Bold,Italic" 
+                                       HorizontalTextAlignment="Start"
+                                       FontSize="Small"
+                                       TextColor="Blue"
+                                       Margin="0, 5, 0, 0"/>
+                                
                             </VerticalStackLayout>
                         </HorizontalStackLayout>
                     </Grid>

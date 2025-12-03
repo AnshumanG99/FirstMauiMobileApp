@@ -30,11 +30,11 @@ namespace FirstMauiMobileApp.Models.Entities
 
         public static List<MarvelCharacters> GetCharacters() => new List<MarvelCharacters>
     {
-        new MarvelCharacters("Starlord", "Chris Pratt", "drakemaye.png"),
-        //new MarvelCharacters("Gamora", "Zoe Saldana", "gamora.jpg"),
-        //new MarvelCharacters("Groot", "Vin Diesel", "groot.jpg"),
-        //new MarvelCharacters("Rocket", "Bradley Cooper", "rocket.jpg"),
-        //new MarvelCharacters("Nebula", "Karen Gillan", "nebula.jpg")
+        new MarvelCharacters("Starlord", "Chris Pratt", "starlord.png"),
+        new MarvelCharacters("Gamora", "Zoe Saldana", "gamora.jpg"),
+        new MarvelCharacters("Groot", "Vin Diesel", "groot.jpg"),
+        new MarvelCharacters("Rocket", "Bradley Cooper", "rocket.jpg"),
+        new MarvelCharacters("Nebula", "Karen Gillan", "nebula.jpg")
 
      };
     }
