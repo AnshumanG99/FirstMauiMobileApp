@@ -3,14 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:FirstMauiMobileApp.Models.Entities"
              x:Class="FirstMauiMobileApp.Views.CollectionsButtonsPage"
-             Title="{Binding Title}">
+             Title="{Binding ButtonsTitle}">
 
     <ContentPage.Resources>
         <Style TargetType="Button">
             <Setter Property="Margin" Value="10" />
         </Style>
     </ContentPage.Resources>
-
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" x:Name="Addbtn" Command="{Binding AddCommand}" />
     </ContentPage.ToolbarItems>

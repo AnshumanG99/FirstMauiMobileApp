@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace FirstMauiMobileApp.ViewModels
 {
     public partial class CollectionsImagesViewModel : ObservableObject
-    {
+    {   
         private List<MarvelCharacters> _marvelcharacters;
         public string Title => TitleCollectionsImages.Title;
         public ObservableCollection<MarvelCharacters> MarvelCharactersCollection { get; } = new();

@@ -1,9 +1,12 @@
+using FirstMauiMobileApp.ViewModels;
 namespace FirstMauiMobileApp.Views;
 
 public partial class CollectionsButtonsPage : ContentPage
 {
-	public CollectionsButtonsPage()
+	public CollectionsButtonsPage(CollectionsUpdateableViewModel vm)
 	{
-		InitializeComponent();
-	}
+        InitializeComponent();
+        BindingContext = vm;
+
+    }
 }

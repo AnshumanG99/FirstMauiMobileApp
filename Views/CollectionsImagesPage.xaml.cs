@@ -5,7 +5,8 @@ public partial class CollectionsImagesPage : ContentPage
 {
 	public CollectionsImagesPage()
 	{
-        BindingContext = new CollectionsImagesViewModel();
         InitializeComponent();
+        BindingContext = new CollectionsImagesViewModel();
+
     }
 }
