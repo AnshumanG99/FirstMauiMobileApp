@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.Messaging;
 using FirstMauiMobileApp.Models.Entities;
 using FirstMauiMobileApp.Models.Messages;
 using FirstMauiMobileApp.Models.Titles;
+using FirstMauiMobileApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -66,7 +67,7 @@ namespace FirstMauiMobileApp.ViewModels
         {
             WeakReferenceMessenger.Default.Unregister<AddMovieMessage>(this);
 
-            await Shell.Current.GoToAsync(nameof(AddCollectionPage));
+            await Shell.Current.GoToAsync(nameof(CollectionsAddPage));
 
             WeakReferenceMessenger.Default.Register<AddMovieMessage>(this, (r, m) =>
             {
@@ -79,7 +80,7 @@ namespace FirstMauiMobileApp.ViewModels
         private async Task Update(MarvelMovies movie)
         {
             string encodedName = Uri.EscapeDataString(movie.NameofMovie);
-            await Shell.Current.GoToAsync($"{nameof(CollectionEditPage)}?movieName={encodedName}");
+            await Shell.Current.GoToAsync($"{nameof(CollectionsEditPage)}?movieName={encodedName}");
         }
         
         [RelayCommand]

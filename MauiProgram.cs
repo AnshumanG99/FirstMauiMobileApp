@@ -25,6 +25,7 @@ namespace FirstMauiMobileApp
             {
                 builder.Services.AddSingleton<CollectionsUpdateableViewModel>();
                 builder.Services.AddSingleton<CollectionsButtonsPage>();
+                builder.Services.AddSingleton<CollectionsIconsPage>();
             }
             catch (Exception ex)
             {

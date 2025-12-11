@@ -9,5 +9,6 @@ namespace FirstMauiMobileApp.Models.Titles
     internal class TitleCollectionsButtons
     {
         public static string AddTitle { get; } = "Add Movie to Collection";
+        public static string EditTitle { get; } = "Edit Movie in Collection";
     }
 }
