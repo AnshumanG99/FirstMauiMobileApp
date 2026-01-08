@@ -52,7 +52,11 @@ namespace FirstMauiMobileApp
 
             Routing.RegisterRoute(nameof(ControlsSwitchPage), typeof(ControlsSwitchPage));
             Routing.RegisterRoute(nameof(ControlsSliderPage), typeof(ControlsSliderPage));
+            Routing.RegisterRoute(nameof(ControlsSliderVMPage), typeof(ControlsSliderVMPage));
+            Routing.RegisterRoute(nameof(ControlsSliderXAMLPage), typeof(ControlsSliderXAMLPage));
             Routing.RegisterRoute(nameof(ControlsStepperPage), typeof(ControlsStepperPage));
+            Routing.RegisterRoute(nameof(ControlsStepperXAMLPage), typeof(ControlsStepperXAMLPage));
+            Routing.RegisterRoute(nameof(ControlsStepperVMPage), typeof(ControlsStepperVMPage));
             Routing.RegisterRoute(nameof(ControlsEntryPage), typeof(ControlsEntryPage));
             Routing.RegisterRoute(nameof(ControlsPickerPage), typeof(ControlsPickerPage));
             Routing.RegisterRoute(nameof(ControlsDateandTimePage), typeof(ControlsDateandTimePage));

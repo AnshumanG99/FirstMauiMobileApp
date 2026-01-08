@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirstMauiMobileApp.Views.ControlsSliderVMPage"
+             Title="{Binding Title}">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <BoxView Color="{Binding BoxColor}" 
+                 HeightRequest="25" 
+                 HorizontalOptions="Fill" 
+                 Opacity="{Binding SliderValue}"/>
+
+        <Slider Minimum="0" Maximum="1" Value="{Binding SliderValue, Mode=TwoWay}"
+                ThumbColor="{Binding BoxColor}" 
+                MaximumTrackColor="{Binding IncreaseColor}" 
+                MinimumTrackColor="{Binding DecreaseColor}"
+                HorizontalOptions="Fill" />
+
+        <Label Text="{Binding LabelText, Mode=TwoWay}"
+               FontAttributes="Bold" 
+               FontSize="Large" 
+               HorizontalOptions="Center" />
+
+        <Label Text="Moving Slider Will Change Opacity"
+               FontAttributes="Bold" 
+               FontSize="Medium" 
+               TextColor="{Binding LabelColor}"
+               HorizontalOptions="Center" />
+
+        <Button Text="Set Slider to 50%"
+                Command="{Binding SetToHalfCommand}" />
+
+    </VerticalStackLayout>
+    
+</ContentPage>

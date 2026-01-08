@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace FirstMauiMobileApp.Models.Titles
 {
-    class TitleControlsSlider
+    internal class TitleControlsSlider
     {
-        public static string Title { get; } = "Slider VM";
-        public static string ValueLabel { get; } = "Value of the Slider is ";
-        public static string Label { get; } = "Moving Slider will Change Opacity";
-        public static string ButtonLabel { get; } = "Set Slider to 50%";
+        public static string Title { get; } = "Slider Menu";
+        public static string SliderXAML { get; } = "Slider XAML";
+        public static string SliderVM { get; } = "Slider VM";
     }
 }

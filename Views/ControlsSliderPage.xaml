@@ -4,24 +4,53 @@
              x:Class="FirstMauiMobileApp.Views.ControlsSliderPage"
              Title="{Binding Title}">
 
-    <VerticalStackLayout Padding="20" Spacing="20">
+    <ContentPage.Resources>
 
-        <BoxView Color="Blue"
-                 HeightRequest="25" HorizontalOptions="Fill" />
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="4" />
+            <Setter Property="HeightRequest" Value="50" />
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="BackgroundColor" Value="MediumSeaGreen" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+        </Style>
 
-        <Slider Minimum="0" Maximum="1" Value="{Binding SliderValue, Mode=TwoWay}"
-                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
-                HorizontalOptions="Fill" />
+    </ContentPage.Resources>
 
-        <Label Text="{Binding SliderValue}"
-               FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+    <VerticalStackLayout>
 
-        <Label Text="Moving Slider Will Change Opacity"
-               FontAttributes="Bold" FontSize="Medium" TextColor="Blue"
-               HorizontalOptions="Center" />
+        <Grid   Padding="16, 24, 16, 16"
+            RowSpacing="6"
+            ColumnSpacing="12">
 
-        <Button Text="Set Slider to 50%"
-                Command="{Binding SetToHalfCommand}" />
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.RowSpan="2"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding SliderXAML}"
+                    Command = "{Binding SliderXAMLClickedCommand}" />
+
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.RowSpan="2"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding SliderVM}"
+                    Command = "{Binding SliderVMClickedCommand}" />
+
+        </Grid>
 
     </VerticalStackLayout>
 </ContentPage>
