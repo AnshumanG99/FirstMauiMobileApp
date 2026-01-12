@@ -12,9 +12,9 @@ namespace FirstMauiMobileApp.ViewModels
 {
     public partial class ControlsStepperViewModel : ObservableObject
     {
-        public string Title => TitleControlsStepper.Title;
-        public string StepperXAML => TitleControlsStepper.StepperXAML;
-        public string StepperVM => TitleControlsStepper.StepperVM;
+        public string Title => TitleControls.StepperMenuTitle;
+        public string StepperXAML => TitleControls.StepperXAML;
+        public string StepperVM => TitleControls.StepperVM;
 
         [RelayCommand]
         private async Task StepperXAMLClicked()

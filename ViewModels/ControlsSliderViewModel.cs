@@ -12,9 +12,9 @@ namespace FirstMauiMobileApp.ViewModels
 {
     public partial class ControlsSliderViewModel : ObservableObject
     {
-        public string Title => TitleControlsSlider.Title;
-        public string SliderXAML => TitleControlsSlider.SliderXAML;
-        public string SliderVM => TitleControlsSlider.SliderVM;
+        public string Title => TitleControls.SliderMenuTitle;
+        public string SliderXAML => TitleControls.SliderXAML;
+        public string SliderVM => TitleControls.SliderVM;
 
         [RelayCommand]
         private async Task SliderXAMLClicked()

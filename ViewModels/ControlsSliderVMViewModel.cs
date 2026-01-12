@@ -11,11 +11,11 @@ namespace FirstMauiMobileApp.ViewModels
 {
     public partial class ControlsSliderVMViewModel : ObservableObject
     {
-        public string Title => TitleControlsSliderVM.Title;
-        public string BoxColor => TitleControlsSliderVM.BoxColor;
-        public string IncreaseColor => TitleControlsSliderVM.IncreaseColor;
-        public string DecreaseColor => TitleControlsSliderVM.DecreaseColor;
-        public string LabelColor => TitleControlsSliderVM.LabelColor;
+        public string Title => TitleControls.SliderVMTitle;
+        public string BoxColor => TitleControls.BoxColor;
+        public string IncreaseColor => TitleControls.IncreaseColor;
+        public string DecreaseColor => TitleControls.DecreaseColor;
+        public string LabelColor => TitleControls.LabelColor;
 
 
         [ObservableProperty]
