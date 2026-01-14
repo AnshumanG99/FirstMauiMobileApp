@@ -42,6 +42,29 @@ namespace FirstMauiMobileApp.Models.Titles
         // Stepper XAML
         public static string StepperXAMLTitle { get; } = "Stepper XAML";
 
+        // Switch Menu
+        public static string SwitchMenuTitle { get; } = "Switch Menu";
+        public static string SwitchXAML { get; } = "Switch XAML";
+        public static string SwitchVM { get; } = "Switch VM";
+
+        // Switch VM
+        public static string SwitchVMTitle { get; } = "Switch VM";
+
+        // Switch XAML
+        public static string SwitchXAMLTitle { get; } = "Switch XAML";
+
+        // Entry Menu
+        public static string EntryMenuTitle { get; } = "Entry Menu";
+        public static string EntryXAML { get; } = "Entry XAML";
+        public static string EntryVM { get; } = "Entry VM";
+
+
+        // Entry VM
+        public static string EntryVMTitle { get; } = "Entry VM";
+
+        // Entry XAML
+        public static string EntryXAMLTitle { get; } = "Entry XAML";
+
 
     }
 }
