@@ -2,11 +2,24 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FirstMauiMobileApp.Views.ControlsEntryXAMLPage"
-             Title="ControlsEntryXAMLPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="{Binding Title}">
+
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         Spacing="15">
+
+        <Entry x:Name="EntryValue"
+               Placeholder="Enter text here"
+               PlaceholderColor="Blue"
+               TextColor="Crimson"
+               WidthRequest="300" />
+
+        <Button Text="Submit"
+                FontAttributes="Bold, Italic"
+                Margin="10"
+                TextColor="White"
+                BackgroundColor="Blue"
+                Clicked="SubmitClicked" />
     </VerticalStackLayout>
+    
 </ContentPage>

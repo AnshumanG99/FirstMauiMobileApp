@@ -12,9 +12,9 @@ namespace FirstMauiMobileApp.ViewModels
 {
     public partial class ControlsEntryViewModel : ObservableObject
     {
-        public string Title => TitleControls.StepperMenuTitle;
-        public string EntryXAML => TitleControls.StepperXAML;
-        public string EntryVM => TitleControls.StepperVM;
+        public string Title => TitleControls.EntryMenuTitle;
+        public string EntryXAML => TitleControls.EntryXAML;
+        public string EntryVM => TitleControls.EntryVM;
 
         [RelayCommand]
         private async Task EntryXAMLClicked()
